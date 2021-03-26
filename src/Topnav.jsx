@@ -37,10 +37,11 @@ export default class Topnav extends React.Component {
                                 onClick={() => switchLang('en')}
                             >English</Dropdown.Item>
                         </Dropdown>
-                        <Nav.Item icon={<Icon icon='github' />}>
-                            <a href='https://github.com/felipe1234-dev/coronavirus-map' target='_blank'>
-                                Github
-                            </a>
+                        <Nav.Item 
+                            href='https://github.com/felipe1234-dev/coronavirus-map' target='_blank'
+                            icon={<Icon icon='github' />}
+                        >
+                            Github
                         </Nav.Item>
                     </Nav>
                 </Navbar.Body>
