@@ -15,7 +15,7 @@ export default class Topnav extends React.Component {
             <Navbar appearance='default'>
                 <Navbar.Header>
                     <a href='#' className='navbar-brand logo'>
-                        Coronavirus (COVID-19)
+                        Coronavirus (COVID-19) Dashboard
                     </a>
                 </Navbar.Header>
                 <Navbar.Body>
@@ -38,7 +38,9 @@ export default class Topnav extends React.Component {
                             >English</Dropdown.Item>
                         </Dropdown>
                         <Nav.Item icon={<Icon icon='github' />}>
-                            Github
+                            <a href='https://github.com/felipe1234-dev/coronavirus-map' target='_blank'>
+                                Github
+                            </a>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Body>
