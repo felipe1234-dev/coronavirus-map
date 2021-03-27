@@ -33,7 +33,9 @@ export default class Attached extends React.Component {
         }
     }
 
-    componentWillMount() { this.setState(this.state); }
+    componentDidMount() { 
+        this.setState(this.state); 
+    }
 
     componentDidUpdate(prevProps) {
         if (JSON.stringify(this.props.lang) !== JSON.stringify(prevProps.lang)) {
@@ -92,6 +94,7 @@ export default class Attached extends React.Component {
                     </Nav>
                 </section>
                 <section className="attached3">
+                    
                     <Ranking { ...this.props } />
                 </section>
             </>
