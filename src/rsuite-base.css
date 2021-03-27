@@ -202,14 +202,14 @@ html {
     position: fixed;
     left    : 500px;
     bottom  : 0px;
-    z-index : 100
+    z-index : 10
 }
 
 .attached2 {
     position: fixed;
     right   : 10px;
     top     : 60px;
-    z-index : 100
+    z-index : 10
 }
 
 .attached3 {
@@ -218,15 +218,33 @@ html {
     bottom    : 5px;
     height    : 70vh;
     overflow-y: scroll;
-    z-index   : 100
+    z-index   : 10
 }
 
 .ranking-container {
     width: 250px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra extra small devices (phones, 500px and down) */
+@media only screen and (max-width: 500px) {
+    .attached3 {
+        height: 25vh;
+        bottom: 40px;
+        width : 300px; 
+    }
+
+    .attached2 {
+        top: 120px;
+    }
+
+    .attached1 {
+        left  : 0px;
+        bottom: 0px
+    }
+}
+
+/* Extra small devices (phones, 500px and up) */
+@media only screen and (min-width: 500px) {
     .attached3 {
         height: 30vh;
         bottom: 40px;
