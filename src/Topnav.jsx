@@ -8,8 +8,29 @@ import {
 import 'rsuite/dist/styles/rsuite-default.css';
 
 export default class Topnav extends React.Component {
+
+    componentDidMount() {
+        this.setState(this.state);
+    }
+
+    componentDidUpdate(prevProps) {
+        if (JSON.stringify(this.props) !== JSON.stringify(prevProps)) {
+            this.setState(this.state);
+        }
+    }
+
     render() {
+        const { lang } = this.props;
+
         const switchLang = this.props.switchLang;
+
+        let language = (lang.to === 'en')? 'English' : (
+            (lang.to === 'fr')? 'Français' : (
+                (lang.to === 'de')? 'Deutsche' : (
+                    (lang.to === 'es')? 'Español' : 'Português'
+                )
+            ) 
+        );
 
         return (
             <Navbar appearance='default'>
@@ -20,7 +41,7 @@ export default class Topnav extends React.Component {
                 </Navbar.Header>
                 <Navbar.Body>
                     <Nav pullRight>
-                        <Dropdown title="Language" icon={<Icon icon='language' />}>
+                        <Dropdown title={language} icon={<Icon icon='language' />}>
                             <Dropdown.Item
                                 onClick={() => switchLang('fr')}
                             >Français</Dropdown.Item>
