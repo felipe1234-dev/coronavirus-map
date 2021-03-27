@@ -9,7 +9,8 @@ import de from './de/Translations.jsx';
 import fr from './fr/Translations.jsx';
 import pt from './pt/Translations.jsx';
 import 'rsuite/dist/styles/rsuite-default.css';
-import './rsuite-base.css';
+import './rsuite-dark-theme.css';
+import './style.css';
 
 export default class Layout extends React.Component {
 
