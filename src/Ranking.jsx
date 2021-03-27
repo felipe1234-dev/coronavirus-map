@@ -51,6 +51,14 @@ export default class Ranking extends React.Component {
             selectedFilter[0].label.replace(/^(\w){1}/g, c => "today" + c[0].toUpperCase())
         )}`;
 
+        let dataText = `${(!today)? (
+            (absolute)? selectedFilter[0].label : (
+                selectedFilter[0].label + "/1Mi"
+            )
+        ) : (
+            selectedFilter[0].label.replace(/^(\w){1}/g, c => "today" + c[0].toUpperCase())
+        )}`;
+
         const handleOnChange = this.handleOnChange;
 
         let counter = 0;
@@ -90,7 +98,7 @@ export default class Ranking extends React.Component {
                                                 <p>
                                                     <b style={{ color: (counter < 4)? selectedFilter[0].color : "#A4A9B3" }}>
                                                         {formatNumber(co[dataName])}
-                                                    </b> {tr(dataName)}
+                                                    </b> {tr(dataText)}
                                                 </p>
                                             </li>
                                         </ul>
