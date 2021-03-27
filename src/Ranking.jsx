@@ -56,7 +56,7 @@ export default class Ranking extends React.Component {
                 selectedFilter[0].label + "/1Mi"
             )
         ) : (
-            selectedFilter[0].label.replace(/^(\w){1}/g, c => c[0].toUpperCase() +  " today")
+            selectedFilter[0].label +  " today"
         )}`;
 
         const handleOnChange = this.handleOnChange;
