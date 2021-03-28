@@ -14,7 +14,7 @@ export default class Map extends React.Component {
     constructor(){
         super();
         this.state = {
-            MapSettings: {
+            mapSettings: {
                 center: [0, 0],
                 defaultBaseMap: 'OpenStreetMap',
                 zoom: 3,
@@ -25,8 +25,8 @@ export default class Map extends React.Component {
                     zIndex: '0'
                 }
             },
-            TileLayerSettings: {
-                url: 'https://api.mapbox.com/styles/v1/felipe1234-dev/cklo8bjov5iya17qbwl4miqt3/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZmVsaXBlMTIzNC1kZXYiLCJhIjoiY2treXlsODhzMnRvZjJ3bXJmcXUwb3UxNiJ9.T2zEQro5gX8CvzmhtInNpA',
+            tileLayerSettings: {
+                url: `https://api.mapbox.com/styles/v1/felipe1234-dev/cklo8bjov5iya17qbwl4miqt3/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_ACCESS_TOKEN}`,
                 attribution: 'Map data &copy; <a href=&quot;https://www.openstreetmap.org/&quot;>OpenStreetMap</a> contributors, <a href=&quot;https://creativecommons.org/licenses/by-sa/2.0/&quot;>CC-BY-SA</a>, Imagery &copy; <a href=&quot;https://www.mapbox.com/&qu;>Mapbox</a>'
             }
         };
@@ -57,8 +57,8 @@ export default class Map extends React.Component {
 
     render() {
         const { 
-            MapSettings, 
-            TileLayerSettings
+            mapSettings, 
+            tileLayerSettings
         } = this.state;
         const { 
             data, 
@@ -69,8 +69,8 @@ export default class Map extends React.Component {
         const calcRadius = this.calcRadius;
 
         return (
-            <MapContainer {...MapSettings} >
-                <TileLayer {...TileLayerSettings} />
+            <MapContainer {...mapSettings} >
+                <TileLayer {...tileLayerSettings} />
                 <LayerGroup>
                     {data.map(item => (
                         item.countries.map(co => {
