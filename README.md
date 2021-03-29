@@ -51,7 +51,7 @@ Ter um mapa com uma análise das estatísticas de cada país é uma maneira úti
   - [x] Absolutos
 - [x] Filtrar por dia de hoje  
 - [ ] Mostrar dados globais
-- [ ] Clique 
+- [ ] Clique no ranking de países dar zoom no local do país
 
 ## 🛠 Tecnologias
 
@@ -84,13 +84,8 @@ O layout da aplicação em dois tamanhos de tela:
 
 ## 🦸 Autor
 
-<a href="https://github.com/felipe1234-dev">
-  <img 
-       style="border-radius: 50%" 
-       src="https://avatars.githubusercontent.com/u/61811978?s=400&u=d882a8dc3efe065850dc170a8789eb621e58a37f&v=4" 
-       width="100" height="auto" alt="felipe1234-dev"
-  />
-</a>
+<a href="https://github.com/felipe1234-dev"><img src="https://avatars.githubusercontent.com/u/61811978?s=400&u=d882a8dc3efe065850dc170a8789eb621e58a37f&v=4" height="auto" width="200" style="border-radius:50%" alt="felipe1234-dev"></a>
+<br />
 <br />
 [![Linkedin Badge](https://img.shields.io/badge/-Felipe-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/felipe-alves-90349a208/)](https://www.linkedin.com/in/felipe-alves-90349a208/) [![Gmail Badge](https://img.shields.io/badge/-j.contato.felipe@gmail.com-c14438?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:j.contato.felipe@gmail.com)](mailto:j.contato.felipe@gmail.com)
 
