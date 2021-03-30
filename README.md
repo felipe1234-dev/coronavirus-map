@@ -13,7 +13,7 @@
 </p>
 
 <h4 align="center">
-	🚧   Em construção... 🚀 🚧
+	🚧   Concluído  🚀 🚧
 </h4>
 
 <p align="center">
@@ -50,8 +50,6 @@ Ter um mapa com uma análise das estatísticas de cada país é uma maneira úti
   - [x] Relativos
   - [x] Absolutos
 - [x] Filtrar por dia de hoje  
-- [ ] Mostrar dados globais
-- [ ] Clique no ranking de países dar zoom no local do país
 
 ## 🛠 Tecnologias
 
