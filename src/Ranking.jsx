@@ -75,7 +75,7 @@ export default class Ranking extends React.Component {
                             item.countries.sort((a, b) => (
                                 b[dataName] - a[dataName]
                             )).filter(co => {
-                                let country = tr(co.country);
+                                let country = `${tr(co.country)}`;
                                 return (country.search(selectedCountry) > -1);
                             }).map(co => {
                                 
